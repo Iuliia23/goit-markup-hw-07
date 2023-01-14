@@ -213,7 +213,7 @@ display: flex;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-action);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
         .social-link-mobile:hover,
@@ -226,10 +226,16 @@ fill: var(--color-footer-logo)
 }
 
         /* Герой для мобільного */
-        .section.hero {
-            padding: 112px 0;
-            text-align: center;
-        }
+                .section.hero {
+                    padding: 112px 0;
+                    text-align: center;
+                    background-color: var(--color-primary);
+                    margin-right: auto;
+                    margin-left: auto;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
         .hero-title {
             width: 318px;
             height: 80px;
@@ -336,8 +342,6 @@ fill: var(--color-footer-logo)
             display: block;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
-            background-color: var(--color-action);
             margin-right: 24px;
         }
         .networks:last-child {
@@ -349,8 +353,14 @@ fill: var(--color-footer-logo)
             justify-content: center;
             width: 100%;
             height: 100%;
+            border-radius: 50%;
+                background-color: var(--color-action);
             cursor: pointer;
         }
+                .networks-link:hover,
+                .networks-link:focus {
+                    background-color: var(--color-background-focus);
+                }
         /* Клієнти для мобільного */
         .title-customers {
             margin-left: auto;
@@ -535,6 +545,7 @@ fill: var(--color-footer-logo)
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-top: 16px;
                     width: 165px;
                     height: 40px;
                     color: var(--color-white);
@@ -652,7 +663,12 @@ fill: var(--color-footer-logo)
                     text-align: center;
                     margin-left: auto;
                     margin-right: auto;
+                    background-color: var(--color-primary);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
                 }
+                                
     .hero-title {
                     width: 494px;
                     font-size: 56px;
@@ -768,8 +784,6 @@ fill: var(--color-footer-logo)
       display: block;
       width: 40px;
       height: 40px;
-      border-radius: 50%;
-      background-color: var(--color-action);
       margin-right: 24px;
   }
   .networks:last-child {
@@ -779,9 +793,15 @@ fill: var(--color-footer-logo)
       display: flex;
       align-items: center;
       justify-content: center;
+    border-radius: 50%;
+        background-color: var(--color-action);
       width: 100%;
       height: 100%;
       cursor: pointer;
+  }
+  .networks-link:hover,
+  .networks-link:focus {
+      background-color: var(--color-background-focus);
   }
   /* Клієнти для планшета */
   .title-customers {
@@ -1183,8 +1203,6 @@ margin-bottom: 8px;
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: var(--color-action);
     margin-right: 24px;
 }
 .networks:last-child {
@@ -1194,9 +1212,16 @@ margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+        background-color: var(--color-action);
     width: 100%;
     height: 100%;
     cursor: pointer;
+}
+.networks-link:hover,
+.networks-link:focus {
+    background-color: var(--color-background-focus);
+    
 }
 /* Клієнти */
 .title-customers {
